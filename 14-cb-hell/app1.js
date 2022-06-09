@@ -2,7 +2,8 @@
 // after 1s first red;
 // after 5s second blue; 
 // after 2s third green; 
-// IN SEQUENCE !!!!
+// 1st => 3rd => 2nd
+//solution is to to nest callbacks as in app.js
 
 const first = document.querySelector('.first')
 const second = document.querySelector('.second')
@@ -12,11 +13,11 @@ const btn = document.querySelector('.btn')
 btn.addEventListener('click', () => {
   setTimeout(() => {
     first.style.color = 'red'
-    setTimeout(() => {
-      second.style.color = 'blue'
-      setTimeout(() => {
-        third.style.color = 'green'
-      }, 2000)
-    }, 5000)
   }, 1000)
+  setTimeout(() => {
+    second.style.color = 'blue'
+  }, 5000)
+  setTimeout(() => {
+    third.style.color = 'green'
+  }, 2000)
 })

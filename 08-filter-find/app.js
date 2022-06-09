@@ -3,9 +3,11 @@
 
 const people = [
   { name: 'bob', age: 20, position: 'developer' },
+  { name: 'hassan', age: 27, position: 'developer' },
   { name: 'peter', age: 25, position: 'designer' },
   { name: 'susy', age: 30, position: 'the boss' },
   { name: 'anna', age: 35, position: 'intern' },
+  { name: 'asma', age: 18, position: 'intern' },
 ];
 // filter
 const youngPeople = people.filter((person) => {
@@ -16,7 +18,7 @@ const youngPeople = people.filter((person) => {
 });
 console.log(youngPeople);
 
-const developers = people.filter((person) => person.position === 'developer');
+const developers = people.filter((person) => person.position === 'developer');// implicit return for arrow fns
 console.log(developers);
 // no match
 const seniorDevs = people.filter((item) => item.position === 'senior dev');

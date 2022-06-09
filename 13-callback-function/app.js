@@ -1,9 +1,9 @@
 function makeUppercase(value) {
   console.log(value.toUpperCase())
 }
-// makeUppercase('peter')
+ makeUppercase('peter')
 
-function reverseString(value) {
+const reverseString = (value) => {
   console.log(value.split('').reverse().join(''))
 }
 

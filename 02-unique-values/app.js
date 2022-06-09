@@ -13,7 +13,7 @@ const menu = [
     category: 'dinner',
   },
   {
-    name: 'bacon',
+    name: 'chapat',
     category: 'breakfast',
   },
   {
@@ -27,8 +27,9 @@ const menu = [
 ];
 // const categories = ['all', ...new Set(menu.map((item) => item.category))];
 // map - get all instances
-// new Set - narrow down
-// ['all',...] - turn it back to array
+// new Set - narrow down instances
+// ['all',...] - turn it back to array plus 'all' using spread operator
+
 
 const categories = ['all', ...new Set(menu.map((item) => item.category))];
 const result = document.querySelector('.result');

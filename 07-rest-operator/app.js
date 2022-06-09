@@ -10,6 +10,7 @@ const [first, second, ...restOfTheFruits] = fruits;
 
 console.log(first, restOfTheFruits);
 
+
 const specificFruit = restOfTheFruits.find((fruit) => fruit === 'lemon');
 console.log(specificFruit);
 

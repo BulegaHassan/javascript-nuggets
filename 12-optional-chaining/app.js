@@ -11,14 +11,14 @@ const people = [
 ]
 
 people.forEach((person) => {
-  // console.log(person.name)
-  // console.log(person.location)
-  // console.log(person.location.street)
-  // console.log(person.location.timezone.offset)
-  // console.log(
-  //   person.location &&
-  //     person.location.timezone &&
-  //     person.location.timezone.offset
-  // )
+   console.log(person.name)
+   console.log(person.location)
+  console.log(person.location.street)
+  //console.log(person.location.timezone.offset) 
+  console.log(
+    person.location &&
+      person.location.timezone &&
+      person.location.timezone.offset
+  )
   console.log(person?.location?.timezone?.offset)
 })

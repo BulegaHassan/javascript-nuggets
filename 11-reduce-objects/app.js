@@ -24,6 +24,7 @@ const cart = [
 ]
 
 let { totalItems, cartTotal } = cart.reduce(
+    // when youdont destructure use let total = cart.reduce
   (total, cartItem) => {
     const { amount, price } = cartItem
     // count items

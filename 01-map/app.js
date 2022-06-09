@@ -25,6 +25,10 @@ const people = [
 // returns a new array
 // does not change the size of original array (unlike filter)
 // uses values from original array when making new one
+const originalPeople = people.map((person) => {return person})
+console.log(originalPeople);
+
+
 
 const getAges = (person) => person.age * 2;
 

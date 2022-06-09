@@ -2,7 +2,7 @@
 
 const fruits = ['orange', 'banana', 'lemon'];
 const friends = ['john', 'peter', 'bob', 'anna', 'kelly'];
-
+// for destructuring arrays order matters
 const fruit1 = fruits[0];
 const fruit2 = fruits[1];
 const fruit3 = fruits[2];
